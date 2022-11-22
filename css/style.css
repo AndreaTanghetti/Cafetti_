@@ -38,7 +38,38 @@
     border-color: #88b293;
     border-radius: 30%;
 }
+.container-fluid{
+    padding-left: 0;
+    padding-right: 0;
 
+}
+.d-flex{
+    width: 250px;
+}
+.form-control{
+    font-size: 15px;
+    padding: 0;
+}
+.btn-outline-success{
+    font-size: 15px;
+}
+.nav-link {
+    display: flex;
+    justify-content: center;
+    padding:5px ;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    transition: 0.5s ;
+}
+
+.navbar-light .navbar-nav .nav-link.active:hover {
+    color: #fff7f5;
+    background-color: #d2bf9e;}
+
+/*---MODIF. BOOTSTRAP---*/
 body,
 html {
     background-color: #fff7f5;
@@ -60,41 +91,6 @@ header div {
     background-color: #A0CDAC;
 
 }
-
-.nav-link {
-    display: flex;
-    justify-content: center;
-}
-
-.navbar-light .navbar-nav .nav-link.active:hover {
-    color: #fff7f5;
-}
-
-header nav ul li a {
-    text-decoration: none;
-    display: flex;
-    flex-direction: row;
-    margin: 10px;
-    padding: 10px;
-    color: black;
-    background-color: #A0CDAC;
-    border-radius: 20px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    transition: 0.5s ;
-}
-
-
-
-header nav ul li a:hover {
-    color: #fff7f5;
-    background-color: #d2bf9e;
-}
-
-
-
-
 /*--MAIN--*/
 .hero h1 {
     color: black;
@@ -438,15 +434,11 @@ footer img {
             "bar bar "
         ;
     }
-}
-
-
-@media screen and (max-width:992px) {
     .b4 {
         display: none;
     }
-
 }
+
 
 @media screen and (max-width:918px) {
     .contenedor {
@@ -471,9 +463,6 @@ footer img {
     .cafe div {
         margin: 5px;
     }
-}
-
-@media screen and (max-width:650px) {
     .carousel {
         width: auto;
         margin: 10px;
@@ -482,17 +471,15 @@ footer img {
     .b3 {
         display: none;
     }
-}
 
-@media screen and (max-width:610px) {
     .contenedor .paula img {
-        width: 350px;
-        height: 350px;
+        width: 380px;
+        height: 380px;
     }
 
     .contenedor .paula {
-        width: 350px;
-        height: 350px;
+        width: 380px;
+        height: 380px;
     }
 
     .contenedor {
