@@ -1,7 +1,7 @@
 <h1 align="center">Hola👋, soy Andrea Tanghetti</h1>
 <h3 align="center">Estudiante de Desarrollo Web en Coderhouse</h3>
 
-- 🔭 Actualmente estoy trabando en [Cafetti](Cafetti)
+- 🔭 Actualmente estoy trabando en [Cafetti](https://andreatanghetti.github.io/Cafetti_/)
 
 
 <h3 align="left">Idiomas y herramientas:</h3>
