@@ -10,3 +10,18 @@ $font-size:
 25px,
 30px,
 35px;
+
+$tarjeta:(
+    ancho:300px,
+    borde:$color-principal 1px solid,
+    text-align:center,
+    border-radius:10%,
+    sombra:0px 3px 19px 5px rgba(109, 109, 107, 0.236),
+    transition:all,
+    duracion:0.5s,
+);
+
+%flex{
+    display: flex;
+    justify-content: center;
+}

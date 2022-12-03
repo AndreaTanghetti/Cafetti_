@@ -105,10 +105,10 @@ main section div .cajita .productos {
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    margin: 20px;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
     transition-property: all;
-    transition-duration: 0.5s; }
+    transition-duration: 0.5s;
+    margin: 20px; }
     main section div .cajita .productos div:hover {
       box-shadow: 0px 3px 19px 5px rgba(16, 16, 16, 0.329); }
     main section div .cajita .productos div img {
@@ -217,10 +217,10 @@ main section .cafe {
     border: #A0CDAC 1px solid;
     text-align: center;
     border-radius: 10%;
-    margin: 50px;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
     transition-property: all;
-    transition-duration: 0.5s; }
+    transition-duration: 0.5s;
+    margin: 50px; }
     main section .cafe div:hover {
       box-shadow: 0px 3px 19px 5px rgba(16, 16, 16, 0.329); }
     main section .cafe div img {
