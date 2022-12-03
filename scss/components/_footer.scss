@@ -9,9 +9,7 @@ footer{
         font-size: medium;
     }
     .contactos{
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @extend %flex;
         margin: 10px;
         a{
             width: 30px;
