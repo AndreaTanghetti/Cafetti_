@@ -113,7 +113,7 @@
         .navbar{
             .container-fluid{
                 .navbar-toggler{
-                    font-size: 15px;
+                    font-size:nth($font-size,2);
                 }
             }           
         }
@@ -121,10 +121,10 @@
             justify-content: flex-end;
             width: 200px;
             .form-control{
-                font-size: 10px;
+                font-size: nth($font-size,1);
             }
             .btn-outline-success{
-                font-size: 10px;
+                font-size: nth($font-size,1);
             }
         }
     }
@@ -133,14 +133,14 @@
     main{
         .hero{
             h1{
-                font-size: 25px;
+                font-size:nth($font-size,4);
                 margin: 5px;
             }
         }
         section{
             div{
                 h2{
-                    font-size: 20px;
+                    font-size: nth($font-size,3);
                 }
                 .cajita{
                     .productos{
@@ -168,11 +168,11 @@
                         border: 15px;
                     }
                     select{
-                        font-size: 15px;
+                        font-size: nth($font-size,2);
                         padding: 5px;
                     }
                     a{
-                        font-size: 15px;
+                        font-size: nth($font-size,2);
                     }
                 }
             }

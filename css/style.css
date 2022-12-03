@@ -1,17 +1,17 @@
 /*--HEADER--*/
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 } */
 
 /* MODIF. BOOTSTRAP */
-/* .navbar {
+.navbar {
     padding-top: 0;
     padding-bottom: 0;
-} */
+}
 
-/* .carousel-control-prev-icon {
+ .carousel-control-prev-icon {
     background-color: rgba(128, 128, 128, 0.226);
 }
 
@@ -23,22 +23,22 @@
 .carousel {
     width: 600px;
     margin: auto
-} */
+}
 
 .navbar-light .navbar-toggler {
     color: #a0cdac00;
 }
 
-/* .btn-outline-success:hover {
+.btn-outline-success:hover {
     background-color: #d2bf9e;
-} */
+}
 
-/* .btn-outline-success {
+.btn-outline-success {
     color: black;
     border-color: #88b293;
     border-radius: 30%;
-} */
-/* .container-fluid{
+}
+.container-fluid{
     padding-left: 0;
     padding-right: 0;
 
@@ -52,8 +52,8 @@
 }
 .btn-outline-success{
     font-size: 15px;
-} */
-/* .nav-link {
+}
+.nav-link {
     display: flex;
     justify-content: center;
     padding:5px ;
@@ -63,14 +63,14 @@
     font-style: normal;
     font-size: 20px;
     transition: 0.5s ;
-} */
+} 
 
-/* .navbar-light .navbar-nav .nav-link.active:hover {
+.navbar-light .navbar-nav .nav-link.active:hover {
     color: #fff7f5;
-    background-color: #d2bf9e;} */
+    background-color: #d2bf9e;} 
 
 /*---MODIF. BOOTSTRAP---*/
-/* body,
+body,
 html {
     background-color: #fff7f5;
     height: 100%;
@@ -92,7 +92,7 @@ header div {
 
 } */
 /*--MAIN--*/
-/* .hero h1 {
+.hero h1 {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -127,10 +127,10 @@ section div h2 {
     flex-direction: row;
     justify-content: space-around;
     flex-wrap: wrap;
-} */
+}
 
 
-/* 
+
 .cajita .productos div {
     width: 300px;
     border: #A0CDAC 1px solid;
@@ -183,7 +183,7 @@ section div h2 {
 
 
 /*--MICUENTA Y CREAR CUENTA--*/
-/* .formulario {
+.formulario {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -245,7 +245,7 @@ section div h2 {
 
 /*---FIN MI  Y CREAR CUENTA---*/
 /*---MAIN CAFE---*/
-/* .cafe {
+.cafe {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -301,13 +301,13 @@ section div h2 {
     border-radius: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-} */
+}
 
 /*--- FIN MAIN CAFE---*/
 
 /* ---QUIENES SOMOS--- */
 
-/* .contenedor h2 {
+.contenedor h2 {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -342,10 +342,10 @@ section div h2 {
     display: flex;
     justify-content: space-evenly;
     grid-area: bar;
-} */
+}
 
 /* ---GRIDS--- */
-/* .contenedor {
+.contenedor {
     display: grid;
     grid-template-rows: 300px 600px 200px 200px;
     grid-template-columns: repeat(4, 1fr);
@@ -373,13 +373,13 @@ section div h2 {
 
 .propuesta {
     grid-area: propuesta;
-} */
+}
 
 
 /* ---FIN GRIDS Y QUIENES SOMOS--- */
 
 /*---FOOTER---*/
-/* footer {
+footer {
     background-color: #A0CDAC;
     margin-top: auto;
 }
@@ -415,7 +415,7 @@ footer img {
     width: 30px;
     height: 30px;
     display: block;
-} */
+}
 
 
 /*---FIN FOOTER---*/
@@ -512,6 +512,7 @@ footer img {
 
     .d-flex {
         justify-content: flex-end;
+        
 
         flex-wrap: nowrap;
     }
@@ -528,7 +529,7 @@ footer img {
 
 
 
-/* @media screen and (max-width:395px) {
+@media screen and (max-width:395px) {
     .contenedor .paula img {
         width: 300px;
         height: 350px;
@@ -538,7 +539,7 @@ footer img {
         height: 350px;
         width: 300px;
     }
-} */
+}
 
 @media screen and (max-width:357px) {
 

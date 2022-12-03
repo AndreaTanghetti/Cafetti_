@@ -37,7 +37,8 @@ header .logo {
 
 header .navbar {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  text-align: center; }
   header .navbar .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -45,8 +46,6 @@ header .navbar {
     header .navbar .container-fluid .navbar-toggler {
       color: #a0cdac00; }
     header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
-      display: flex;
-      justify-content: center;
       padding: 5px;
       margin-bottom: 10px;
       border-radius: 20px;
@@ -284,6 +283,33 @@ main .contenedor {
     justify-content: space-evenly;
     grid-area: bar; }
 
+footer {
+  background-color: #A0CDAC;
+  margin-top: auto; }
+  footer p {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: medium; }
+  footer .contactos {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 10px; }
+    footer .contactos a {
+      width: 30px;
+      height: 30px;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: normal;
+      margin: 0px 10px 0px 10px;
+      transition: 1s; }
+      footer .contactos a:hover {
+        transform: scale(1.1); }
+      footer .contactos a img {
+        width: 30px;
+        height: 30px;
+        display: block; }
+
 @media screen and (max-width: 1186px) {
   main .contenedor {
     display: grid;
@@ -364,30 +390,3 @@ main .contenedor {
       padding: 5px; }
     main section .cafe div a {
       font-size: 15px; } }
-
-footer {
-  background-color: #A0CDAC;
-  margin-top: auto; }
-  footer p {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-style: normal;
-    text-align: center;
-    font-size: medium; }
-  footer .contactos {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin: 10px; }
-    footer .contactos a {
-      width: 30px;
-      height: 30px;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-style: normal;
-      margin: 0px 10px 0px 10px;
-      transition: 1s; }
-      footer .contactos a:hover {
-        transform: scale(1.1); }
-      footer .contactos a img {
-        width: 30px;
-        height: 30px;
-        display: block; }
