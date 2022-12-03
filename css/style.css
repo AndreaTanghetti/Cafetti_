@@ -245,7 +245,7 @@ section div h2 {
 
 /*---FIN MI  Y CREAR CUENTA---*/
 /*---MAIN CAFE---*/
-.cafe {
+/* .cafe {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -301,13 +301,13 @@ section div h2 {
     border-radius: 20px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
-}
+} */
 
 /*--- FIN MAIN CAFE---*/
 
 /* ---QUIENES SOMOS--- */
 
-.contenedor h2 {
+/* .contenedor h2 {
     color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-style: normal;
@@ -342,10 +342,10 @@ section div h2 {
     display: flex;
     justify-content: space-evenly;
     grid-area: bar;
-}
+} */
 
 /* ---GRIDS--- */
-.contenedor {
+/* .contenedor {
     display: grid;
     grid-template-rows: 300px 600px 200px 200px;
     grid-template-columns: repeat(4, 1fr);
@@ -373,7 +373,7 @@ section div h2 {
 
 .propuesta {
     grid-area: propuesta;
-}
+} */
 
 
 /* ---FIN GRIDS Y QUIENES SOMOS--- */
@@ -454,7 +454,6 @@ footer img {
         ;
     }
 }
-
 @media screen and (max-width:710px) {
     .cajita .productos div {
         margin: 5px;
@@ -496,10 +495,11 @@ footer img {
     }
 }
 
+
 @media screen and (max-width:460px) {
-    .b1 {
+    /* .b1 {
         display: none;
-    }
+    } */
 
     .container-fluid {
         padding-left: 0%;
@@ -528,7 +528,7 @@ footer img {
 
 
 
-@media screen and (max-width:395px) {
+/* @media screen and (max-width:395px) {
     .contenedor .paula img {
         width: 300px;
         height: 350px;
@@ -538,7 +538,7 @@ footer img {
         height: 350px;
         width: 300px;
     }
-}
+} */
 
 @media screen and (max-width:357px) {
 

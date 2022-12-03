@@ -1,0 +1,44 @@
+@import"../base/variables";
+main{
+    .contenedor{
+        display: grid;
+        grid-template-rows: 300px 600px 200px 200px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "presentacion presentacion presentacion presentacion"
+            "quien quien paula paula"
+            "propuesta propuesta propuesta propuesta"
+            "bar bar bar bar"
+        ;
+        .presentacion{
+            grid-area: presentacion;
+        }
+        .quien{
+            margin: auto;
+            grid-area: quien;
+        }
+        .paula{
+            width: 500px;
+            height: 500px;
+            border: $color-principal 1px solid;
+            border-radius: 10%;
+            margin: auto;
+            grid-area: paula;
+            img{
+                width: 500px;
+                height: 500px;
+                padding: 20px;
+                border-radius: 10%;
+                object-fit: cover;
+            }
+        }
+        .propuesta {
+            grid-area: propuesta;
+        }
+        .baristas{
+            display: flex;
+            justify-content: space-evenly;
+            grid-area: bar;
+        }
+    }
+}

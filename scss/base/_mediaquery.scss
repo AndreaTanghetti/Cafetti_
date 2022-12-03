@@ -1,0 +1,182 @@
+@media screen and (max-width:1186px) {
+    main {
+        .contenedor {
+            display: grid;
+            grid-template-rows: 300px 500px 500px 200px 200px;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-areas:
+                "presentacion presentacion "
+                "quien quien "
+                "paula paula"
+                "propuesta propuesta "
+                "bar bar ";
+        }
+        .baristas {
+            .b4 {
+                display: none;
+            }
+        }
+    }
+}
+@media screen and (max-width:918px) {
+    main {
+        .contenedor {
+            display: grid;
+            grid-template-rows: auto 550px 500px auto 200px;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "presentacion "
+                "quien "
+                "paula"
+                "propuesta"
+                "bar "
+            ;
+        }
+    }
+    main{
+        section{
+            .cafe{
+                div{
+                    margin: 5px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:710px) {
+    main {
+        .contenedor {
+            display: grid;
+            grid-template-rows: auto auto 400px auto 200px;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "presentacion "
+                "quien "
+                "paula"
+                "propuesta"
+                "bar ";
+            ;
+            .paula {
+                width: 380px;
+                height: 380px;
+                img {
+                    width: 380px;
+                    height: 380px;
+                }
+            }
+            .baristas {
+                .b3 {
+                    display: none;
+                }
+            }
+        }
+    }
+    main{
+        .carousel{
+            width: auto;
+            margin: 10px;
+        }
+    }
+    main{
+        section{
+            div{
+                .cajita{
+                    .productos{
+                        div{
+                            margin: 5px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width:460px){
+    main{
+        .contenedor{
+            .paula{
+                height: 350px;
+                width: 300px;
+                img{
+                    width: 300px;
+                    height: 350px;
+                }
+            }
+            .baristas{
+                .b1 {
+                    display: none;
+                }
+            }
+        }
+    }
+    header{
+        .navbar{
+            .container-fluid{
+                .navbar-toggler{
+                    font-size: 15px;
+                }
+            }           
+        }
+        .d-flex{
+            justify-content: flex-end;
+            width: 200px;
+            .form-control{
+                font-size: 10px;
+            }
+            .btn-outline-success{
+                font-size: 10px;
+            }
+        }
+    }
+}
+@media screen and (max-width:357px){
+    main{
+        .hero{
+            h1{
+                font-size: 25px;
+                margin: 5px;
+            }
+        }
+        section{
+            div{
+                h2{
+                    font-size: 20px;
+                }
+                .cajita{
+                    .productos{
+                        div{
+                            width: 200px;
+                            img{
+                                width: 200px;
+                                height: 200px;
+                                border-radius: 10%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    main{
+        section{
+            .cafe{
+                div{
+                    width: 230px;
+                    img{
+                        width: 100%;
+                        height: 220px;
+                        border: 15px;
+                    }
+                    select{
+                        font-size: 15px;
+                        padding: 5px;
+                    }
+                    a{
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+}
