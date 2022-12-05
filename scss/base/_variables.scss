@@ -3,6 +3,7 @@ $color-hover: #d2bf9e;
 $color-claro:#fff7f5;
 $color-textos:black;
 
+// listas
 $font-size:
 10px,
 15px,
@@ -11,6 +12,7 @@ $font-size:
 30px,
 35px;
 
+// mapas
 $tarjeta:(
     ancho:300px,
     borde:$color-principal 1px solid,
@@ -21,7 +23,19 @@ $tarjeta:(
     duracion:0.5s,
 );
 
+// extend
 %flex{
-    display: flex;
+    display:flex;
     justify-content: center;
+}
+
+//! MIXIN
+@mixin flex ($display, $flex, $align ) {
+    display: $display;
+    flex-direction: $flex;
+    align-items: $align;
+}
+@mixin tamano ($width, $height){
+    width:$width ;
+    height:$height;
 }

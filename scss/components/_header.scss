@@ -2,9 +2,8 @@
 
 header {
     .logo {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
+        @extend %flex;
+
         background-color: $color-principal;
     }
     .navbar {

@@ -57,11 +57,9 @@
                 "bar ";
             ;
             .paula {
-                width: 380px;
-                height: 380px;
+                @include tamano( 380px,380px );
                 img {
-                    width: 380px;
-                    height: 380px;
+                    @include tamano(380px ,380px );
                 }
             }
             .baristas {
@@ -95,11 +93,9 @@
     main{
         .contenedor{
             .paula{
-                height: 350px;
-                width: 300px;
+                @include tamano( 300px,350px );
                 img{
-                    width: 300px;
-                    height: 350px;
+                    @include tamano( 300px,350px );
                 }
             }
             .baristas{
@@ -147,8 +143,7 @@
                         div{
                             width: 200px;
                             img{
-                                width: 200px;
-                                height: 200px;
+                                @include tamano(200px, 200px);
                                 border-radius: 10%;
                             }
                         }
