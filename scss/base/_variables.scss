@@ -29,7 +29,7 @@ $tarjeta:(
     justify-content: center;
 }
 
-//! MIXIN
+// MIXIN
 @mixin flex ($display, $flex, $align ) {
     display: $display;
     flex-direction: $flex;
