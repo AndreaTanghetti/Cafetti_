@@ -3,7 +3,6 @@
 header {
     .logo {
         @extend %flex;
-
         background-color: $color-principal;
     }
     .navbar {
