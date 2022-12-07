@@ -73,7 +73,7 @@ header .navbar {
     header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
       border-radius: 20px;
       font-size: 20px;
-      transition: 0.5s; }
+      transition: none; }
       header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
         color: #fff7f5;
         background-color: #d2bf9e; }
