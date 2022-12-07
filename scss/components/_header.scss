@@ -23,7 +23,7 @@ header {
                             .nav-link {
                                 border-radius: 20px;
                                 font-size: nth($font-size,3);
-                                transition: none;
+                                transition: 0.5s;
                                 &:hover {
                                     color: $color-claro;
                                     background-color: $color-hover;
