@@ -18,6 +18,7 @@
         }
     }
 }
+
 @media screen and (max-width:918px) {
     main {
         .contenedor {
@@ -33,16 +34,17 @@
             ;
         }
     }
-    main{
-        section{
-            .cafe{
-                div{
+    main {
+        section {
+            .cafe {
+                div {
                     margin: 5px;
                 }
             }
         }
     }
 }
+
 @media screen and (max-width:710px) {
     main {
         .contenedor {
@@ -57,9 +59,9 @@
                 "bar ";
             ;
             .paula {
-                @include tamano( 380px,380px );
+                @include tamano(380px, 380px);
                 img {
-                    @include tamano(380px ,380px );
+                    @include tamano(380px, 380px);
                 }
             }
             .baristas {
@@ -69,18 +71,18 @@
             }
         }
     }
-    main{
-        .carousel{
+    main {
+        .carousel {
             width: auto;
             margin: 10px;
         }
     }
-    main{
-        section{
-            div{
-                .cajita{
-                    .productos{
-                        div{
+    main {
+        section {
+            div {
+                .cajita {
+                    .productos {
+                        div {
                             margin: 5px;
                         }
                     }
@@ -89,60 +91,65 @@
         }
     }
 }
-@media screen and (max-width:460px){
-    main{
-        .contenedor{
-            .paula{
-                @include tamano( 300px,350px );
-                img{
-                    @include tamano( 300px,350px );
+
+@media screen and (max-width:460px) {
+    main {
+        .contenedor {
+            .paula {
+                @include tamano(300px, 350px);
+
+                img {
+                    @include tamano(300px, 350px);
                 }
             }
-            .baristas{
+
+            .baristas {
                 .b1 {
                     display: none;
                 }
             }
         }
     }
-    header{
-        .navbar{
-            .container-fluid{
-                .navbar-toggler{
-                    font-size:nth($font-size,2);
+
+    header {
+        .navbar {
+            .container-fluid {
+                .navbar-toggler {
+                    font-size: nth($font-size, 2);
                 }
-            }           
+            }
         }
-        .d-flex{
+        .d-flex {
             justify-content: flex-end;
             width: 200px;
-            .form-control{
-                font-size: nth($font-size,1);
+            .form-control {
+                font-size: nth($font-size, 1);
             }
-            .btn-outline-success{
-                font-size: nth($font-size,1);
+            .btn-outline-success {
+                font-size: nth($font-size, 1);
             }
         }
     }
 }
-@media screen and (max-width:357px){
-    main{
-        .hero{
-            h1{
-                font-size:nth($font-size,4);
+
+@media screen and (max-width:357px) {
+    main {
+        .hero {
+            h1 {
+                font-size: nth($font-size, 4);
                 margin: 5px;
             }
         }
-        section{
-            div{
-                h2{
-                    font-size: nth($font-size,3);
+        section {
+            div {
+                h2 {
+                    font-size: nth($font-size, 3);
                 }
-                .cajita{
-                    .productos{
-                        div{
+                .cajita {
+                    .productos {
+                        div {
                             width: 200px;
-                            img{
+                            img {
                                 @include tamano(200px, 200px);
                                 border-radius: 10%;
                             }
@@ -152,22 +159,23 @@
             }
         }
     }
-    main{
-        section{
-            .cafe{
-                div{
+
+    main {
+        section {
+            .cafe {
+                div {
                     width: 230px;
-                    img{
+                    img {
                         width: 100%;
                         height: 220px;
                         border: 15px;
                     }
-                    select{
-                        font-size: nth($font-size,2);
+                    select {
+                        font-size: nth($font-size, 2);
                         padding: 5px;
                     }
-                    a{
-                        font-size: nth($font-size,2);
+                    a {
+                        font-size: nth($font-size, 2);
                     }
                 }
             }

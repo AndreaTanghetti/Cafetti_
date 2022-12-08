@@ -22,18 +22,9 @@ main{
     }
     section{
         div{
-            h2{
-                color:$color-textos;
-                font-size: nth($font-size,5);
-                font-weight: 350;
-                text-align: center;
-                margin: 20px;
-            }
             .cajita{
                 .productos{
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-around;
+                    @include row (flex, space-around);
                     flex-wrap: wrap;
                     div{
                         width:map-get($tarjeta,ancho );
@@ -53,9 +44,6 @@ main{
                                 padding: 20px;}
                         h3{
                             font-weight: 200;
-                            text-align: center;
-                        }
-                        p{
                             text-align: center;
                         }
                         a{

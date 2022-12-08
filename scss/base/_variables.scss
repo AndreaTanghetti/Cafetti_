@@ -23,13 +23,12 @@ $tarjeta:(
     duracion:0.5s,
 );
 
-// extend
-%flex{
-    display:flex;
-    justify-content: center;
-}
-
 // MIXIN
+@mixin row ($display, $justify) {
+    display:$display;
+    justify-content:$justify;
+    
+}
 @mixin flex ($display, $flex, $align ) {
     display: $display;
     flex-direction: $flex;

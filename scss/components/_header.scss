@@ -2,7 +2,7 @@
 
 header {
     .logo {
-        @extend %flex;
+        @include row (flex, center);
         background-color: $color-principal;
     }
     .navbar {

@@ -1,7 +1,3 @@
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
 * {
   margin: 0;
   padding: 0;
@@ -19,45 +15,34 @@ html {
     margin: 0%;
     padding: 0%; }
 
-main .contenedor div h2 {
+h1 {
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+  margin: 20px; }
+
+h2 {
   color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-size: 35px;
-  font-weight: 450;
+  font-weight: 400;
   text-align: center; }
 
-main .contenedor div p {
+p {
   color: black;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   margin: 10px; }
 
-h1 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal; }
-
-h2 {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal; }
-
-p {
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal; }
-
 a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal; }
 
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
 header .logo {
+  display: flex;
+  justify-content: center;
   background-color: #A0CDAC; }
 
 header .navbar {
@@ -92,10 +77,6 @@ header .navbar {
       background-color: #d2bf9e;
       color: #fff7f5; }
 
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
 main .hero h1 {
   color: black;
   font-size: 35px;
@@ -109,16 +90,8 @@ main .carousel {
   main .carousel div button span {
     background-color: rgba(128, 128, 128, 0.226); }
 
-main section div h2 {
-  color: black;
-  font-size: 30px;
-  font-weight: 350;
-  text-align: center;
-  margin: 20px; }
-
 main section div .cajita .productos {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap; }
   main section div .cajita .productos div {
@@ -140,8 +113,6 @@ main section div .cajita .productos {
     main section div .cajita .productos div h3 {
       font-weight: 200;
       text-align: center; }
-    main section div .cajita .productos div p {
-      text-align: center; }
     main section div .cajita .productos div a {
       text-decoration: none;
       color: #fff7f5;
@@ -152,10 +123,6 @@ main section div .cajita .productos {
       border-radius: 20px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: normal; }
-
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
 
 main section .formulario {
   display: flex;
@@ -208,20 +175,8 @@ main section .formulario {
     display: flex;
     justify-content: center; }
 
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
-main section div h2 {
-  color: black;
-  font-size: 30px;
-  font-weight: 350;
-  text-align: center;
-  margin: 20px; }
-
 main section .cafe {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   flex-wrap: wrap; }
   main section .cafe div {
@@ -240,8 +195,6 @@ main section .cafe {
       height: 300px;
       border-radius: 10%;
       padding: 20px; }
-    main section .cafe div p {
-      text-align: center; }
     main section .cafe div select {
       text-decoration: none;
       color: #fff7f5;
@@ -261,10 +214,6 @@ main section .cafe {
       background-color: #A0CDAC;
       border-radius: 20px; }
 
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
 main .contenedor {
   display: grid;
   grid-template-rows: 300px 600px 200px 200px;
@@ -272,6 +221,13 @@ main .contenedor {
   grid-template-areas: "presentacion presentacion presentacion presentacion" "quien quien paula paula" "propuesta propuesta propuesta propuesta" "bar bar bar bar"; }
   main .contenedor .presentacion {
     grid-area: presentacion; }
+    main .contenedor .presentacion h1 {
+      color: black;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-style: normal;
+      font-size: 35px;
+      font-weight: 450;
+      text-align: center; }
   main .contenedor .quien {
     margin: auto;
     grid-area: quien; }
@@ -295,10 +251,6 @@ main .contenedor {
     justify-content: space-evenly;
     grid-area: bar; }
 
-header .logo, footer .contactos {
-  display: flex;
-  justify-content: center; }
-
 footer {
   background-color: #A0CDAC;
   margin-top: auto; }
@@ -306,6 +258,8 @@ footer {
     text-align: center;
     font-size: medium; }
   footer .contactos {
+    display: flex;
+    justify-content: center;
     margin: 10px; }
     footer .contactos a {
       width: 30px;

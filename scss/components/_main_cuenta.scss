@@ -10,15 +10,13 @@ main {
                     color: $color-principal;
                     font-weight: 500;
                     font-size:nth($font-size,3);
-                    display: flex;
-                    justify-content: center;
+                    @include row (flex, center);
                 }
                 input {
                     border-radius: 10px;
                     margin: 5px;
                     padding: 10px;
-                    display: flex;
-                    justify-content: center;
+                    @include row (flex, center);
                 }
             }
             div {
@@ -30,15 +28,13 @@ main {
                     border-radius: 20px;
                     width: 150px;
                     text-decoration: none;
-                    display: flex;
-                    justify-content: center;
+                    @include row (flex, center);
                     font-size: nth($font-size,3);
                 }
                 .contrasenia {
                     color: $color-principal;
                     font-size: nth($font-size,2);
-                    display: flex;
-                    justify-content: center;
+                    @include row (flex, center);
                     margin: 5px;
                 }
             }
@@ -58,8 +54,7 @@ main {
                     width: 150px;
                     text-decoration: none;
                     font-size: nth($font-size,3);
-                    display: flex;
-                    justify-content: center;
+                    @include row (flex, center);
                 }
             }
         }

@@ -1,19 +1,8 @@
 @import"../base/variables";
 main{
     section{
-        div{
-            h2{
-                color:$color-textos;
-                font-size: nth($font-size,5);
-                font-weight: 350;
-                text-align: center;
-                margin: 20px;
-            }
-        }
         .cafe{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-around;
+            @include row (flex, space-around);
             flex-wrap: wrap;
             
                 div{
@@ -32,9 +21,6 @@ main{
                         @include tamano(300px, 300px);
                         border-radius: 10%;
                         padding: 20px;
-                    }
-                    p{
-                        text-align: center;
                     }
                     select{
                         text-decoration: none;
