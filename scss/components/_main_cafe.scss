@@ -1,10 +1,8 @@
-@import"../base/variables";
 main{
     section{
         .cafe{
             @include row (flex, space-around);
             flex-wrap: wrap;
-            
                 div{
                     width:map-get($tarjeta,ancho );
                     border:map-get($tarjeta,borde);

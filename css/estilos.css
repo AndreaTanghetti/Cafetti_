@@ -1,3 +1,6 @@
+header .navbar, main .hero h1, main section div .cajita .productos div h3, main section .formulario div p, main .contenedor .presentacion h1, footer p {
+  text-align: center; }
+
 * {
   margin: 0;
   padding: 0;
@@ -16,14 +19,14 @@ html {
     padding: 0%; }
 
 h1 {
-  color: black;
+  color: #000000;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   margin: 20px; }
 
 h2 {
-  color: black;
+  color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-size: 35px;
@@ -31,7 +34,7 @@ h2 {
   text-align: center; }
 
 p {
-  color: black;
+  color: #000000;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   margin: 10px; }
@@ -47,8 +50,7 @@ header .logo {
 
 header .navbar {
   padding-top: 0;
-  padding-bottom: 0;
-  text-align: center; }
+  padding-bottom: 0; }
   header .navbar .container-fluid {
     padding-left: 0;
     padding-right: 0;
@@ -69,7 +71,7 @@ header .navbar {
     font-size: 15px;
     padding: 0; }
   .d-flex .btn-outline-success {
-    color: black;
+    color: #000000;
     border-color: #88b293;
     border-radius: 30%;
     font-size: 15px; }
@@ -78,10 +80,9 @@ header .navbar {
       color: #fff7f5; }
 
 main .hero h1 {
-  color: black;
+  color: #000000;
   font-size: 35px;
   font-weight: 400;
-  text-align: center;
   margin: 10px; }
 
 main .carousel {
@@ -111,8 +112,7 @@ main section div .cajita .productos {
       border-radius: 10%;
       padding: 20px; }
     main section div .cajita .productos div h3 {
-      font-weight: 200;
-      text-align: center; }
+      font-weight: 200; }
     main section div .cajita .productos div a {
       text-decoration: none;
       color: #fff7f5;
@@ -161,8 +161,7 @@ main section .formulario {
   main section .formulario div p {
     font-size: 15px;
     font-weight: 500;
-    color: #A0CDAC;
-    text-align: center; }
+    color: #A0CDAC; }
   main section .formulario div a:not(.contrasenia) {
     color: #fff7f5;
     background-color: #A0CDAC;
@@ -222,12 +221,11 @@ main .contenedor {
   main .contenedor .presentacion {
     grid-area: presentacion; }
     main .contenedor .presentacion h1 {
-      color: black;
+      color: #000000;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: normal;
       font-size: 35px;
-      font-weight: 450;
-      text-align: center; }
+      font-weight: 450; }
   main .contenedor .quien {
     margin: auto;
     grid-area: quien; }
@@ -255,7 +253,6 @@ footer {
   background-color: #A0CDAC;
   margin-top: auto; }
   footer p {
-    text-align: center;
     font-size: medium; }
   footer .contactos {
     display: flex;

@@ -1,9 +1,8 @@
-@import"../base/variables";
 footer{
     background-color:$color-principal;
     margin-top: auto;
     p{
-        text-align: center;
+        @extend %texto;
         font-size: medium;
     }
     .contactos{

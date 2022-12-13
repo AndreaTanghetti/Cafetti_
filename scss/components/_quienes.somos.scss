@@ -1,4 +1,3 @@
-@import"../base/variables";
 main{
     .contenedor{
         display: grid;
@@ -17,7 +16,7 @@ main{
                 font-style: normal;
                 font-size: nth($font-size,6 );
                 font-weight: 450;
-                text-align: center;
+                @extend %texto;
             }
             grid-area: presentacion;
         }

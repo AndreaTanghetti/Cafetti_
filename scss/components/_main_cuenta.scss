@@ -1,5 +1,3 @@
-@import"../base/variables";
-
 main {
     section {
         .formulario {
@@ -43,7 +41,7 @@ main {
                     font-size: nth($font-size,2);
                     font-weight: 500;
                     color: $color-principal;
-                    text-align: center;
+                    @extend %texto;
                 }
                 a:not(.contrasenia) {
                     color: $color-claro;

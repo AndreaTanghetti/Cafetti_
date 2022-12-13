@@ -1,7 +1,7 @@
 $color-principal:#A0CDAC;
 $color-hover: #d2bf9e;
 $color-claro:#fff7f5;
-$color-textos:black;
+$color-textos:#000000;
 
 // listas
 $font-size:
@@ -37,4 +37,9 @@ $tarjeta:(
 @mixin tamano ($width, $height){
     width:$width ;
     height:$height;
+}
+
+// EXTEN
+%texto{
+    text-align: center;
 }
