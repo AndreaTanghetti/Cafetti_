@@ -332,13 +332,17 @@ footer {
     font-size: 25px;
     margin: 5px; }
   main section div h2 {
-    font-size: 20px; }
+    font-size: 25px; }
   main section div .cajita .productos div {
     width: 200px; }
     main section div .cajita .productos div img {
       width: 200px;
       height: 200px;
       border-radius: 10%; }
+  main section div h1 {
+    font-size: 20px; }
+  main .contenedor div h2 {
+    font-size: 30px; }
   main section .cafe div {
     width: 230px; }
     main section .cafe div img {

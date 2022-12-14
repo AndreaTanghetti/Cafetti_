@@ -143,7 +143,7 @@
         section {
             div {
                 h2 {
-                    font-size: nth($font-size, 3);
+                    font-size: nth($font-size, 4);
                 }
                 .cajita {
                     .productos {
@@ -160,6 +160,25 @@
         }
     }
 
+    main {
+        section {
+            div{
+                h1{
+                    font-size:nth($font-size, 3);
+                }
+            }
+        }
+    }
+    main{
+        .contenedor{
+            div{
+                h2{
+                    font-size:nth($font-size, 5);
+
+                }
+            }
+        }
+    }
     main {
         section {
             .cafe {
@@ -181,5 +200,4 @@
             }
         }
     }
-
 }
