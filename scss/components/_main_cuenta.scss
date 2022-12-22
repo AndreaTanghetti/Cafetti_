@@ -24,7 +24,6 @@ main {
                     margin: 10px;
                     padding: 10px;
                     border-radius: 20px;
-                    width: 150px;
                     text-decoration: none;
                     @include row (flex, center);
                     font-size: nth($font-size,3);
@@ -33,7 +32,6 @@ main {
                     color: $color-principal;
                     font-size: nth($font-size,2);
                     @include row (flex, center);
-                    margin: 5px;
                 }
             }
             div {
@@ -42,17 +40,6 @@ main {
                     font-weight: 500;
                     color: $color-principal;
                     @extend %texto;
-                }
-                a:not(.contrasenia) {
-                    color: $color-claro;
-                    background-color: $color-principal;
-                    margin: 10px;
-                    padding: 10px;
-                    border-radius: 20px;
-                    width: 150px;
-                    text-decoration: none;
-                    font-size: nth($font-size,3);
-                    @include row (flex, center);
                 }
             }
         }

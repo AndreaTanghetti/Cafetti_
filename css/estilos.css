@@ -147,7 +147,6 @@ main section .formulario {
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
-    width: 150px;
     text-decoration: none;
     display: flex;
     justify-content: center;
@@ -156,23 +155,11 @@ main section .formulario {
     color: #A0CDAC;
     font-size: 15px;
     display: flex;
-    justify-content: center;
-    margin: 5px; }
+    justify-content: center; }
   main section .formulario div p {
     font-size: 15px;
     font-weight: 500;
     color: #A0CDAC; }
-  main section .formulario div a:not(.contrasenia) {
-    color: #fff7f5;
-    background-color: #A0CDAC;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    width: 150px;
-    text-decoration: none;
-    font-size: 20px;
-    display: flex;
-    justify-content: center; }
 
 main section .cafe {
   display: flex;
