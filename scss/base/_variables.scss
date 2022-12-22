@@ -1,7 +1,7 @@
-$color-principal:#A0CDAC;
-$color-hover: #d2bf9e;
+$color-principal:#a3c9be;
+$color-hover: #f3b65a;
 $color-claro:#fff7f5;
-$color-textos:#000000;
+$color-textos:#0f3433;
 
 // listas
 $font-size:
@@ -39,7 +39,7 @@ $tarjeta:(
     height:$height;
 }
 
-// EXTEN
+// EXTEND
 %texto{
     text-align: center;
 }

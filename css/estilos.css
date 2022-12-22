@@ -19,14 +19,14 @@ html {
     padding: 0%; }
 
 h1 {
-  color: #000000;
+  color: #0f3433;
   font-size: 30px;
   font-weight: 400;
   text-align: center;
   margin: 20px; }
 
 h2 {
-  color: #000000;
+  color: #0f3433;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   font-size: 35px;
@@ -34,7 +34,7 @@ h2 {
   text-align: center; }
 
 p {
-  color: #000000;
+  color: #0f3433;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-style: normal;
   margin: 10px; }
@@ -46,7 +46,7 @@ a {
 header .logo {
   display: flex;
   justify-content: center;
-  background-color: #A0CDAC; }
+  background-color: #a3c9be; }
 
 header .navbar {
   padding-top: 0;
@@ -54,7 +54,7 @@ header .navbar {
   header .navbar .container-fluid {
     padding-left: 0;
     padding-right: 0;
-    background-color: #A0CDAC; }
+    background-color: #a3c9be; }
     header .navbar .container-fluid .navbar-toggler {
       color: #a0cdac00; }
     header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
@@ -63,7 +63,7 @@ header .navbar {
       transition: 0.5s; }
       header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
         color: #fff7f5;
-        background-color: #d2bf9e; }
+        background-color: #f3b65a; }
 
 .d-flex {
   width: 250px; }
@@ -71,16 +71,16 @@ header .navbar {
     font-size: 15px;
     padding: 0; }
   .d-flex .btn-outline-success {
-    color: #000000;
+    color: #0f3433;
     border-color: #88b293;
     border-radius: 30%;
     font-size: 15px; }
     .d-flex .btn-outline-success:hover {
-      background-color: #d2bf9e;
+      background-color: #f3b65a;
       color: #fff7f5; }
 
 main .hero h1 {
-  color: #000000;
+  color: #0f3433;
   font-size: 35px;
   font-weight: 400;
   margin: 10px; }
@@ -97,7 +97,7 @@ main section div .cajita .productos {
   flex-wrap: wrap; }
   main section div .cajita .productos div {
     width: 300px;
-    border: #A0CDAC 1px solid;
+    border: #a3c9be 1px solid;
     text-align: center;
     border-radius: 10%;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
@@ -119,7 +119,7 @@ main section div .cajita .productos {
       display: inline-block;
       margin: 10px;
       padding: 10px;
-      background-color: #A0CDAC;
+      background-color: #a3c9be;
       border-radius: 20px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: normal; }
@@ -130,7 +130,7 @@ main section .formulario {
   align-items: center;
   margin: 30px; }
   main section .formulario div label {
-    color: #A0CDAC;
+    color: #a3c9be;
     font-weight: 500;
     font-size: 20px;
     display: flex;
@@ -143,7 +143,7 @@ main section .formulario {
     justify-content: center; }
   main section .formulario div a:not(.contrasenia) {
     color: #fff7f5;
-    background-color: #A0CDAC;
+    background-color: #a3c9be;
     margin: 10px;
     padding: 10px;
     border-radius: 20px;
@@ -152,14 +152,14 @@ main section .formulario {
     justify-content: center;
     font-size: 20px; }
   main section .formulario div .contrasenia {
-    color: #A0CDAC;
+    color: #a3c9be;
     font-size: 15px;
     display: flex;
     justify-content: center; }
   main section .formulario div p {
     font-size: 15px;
     font-weight: 500;
-    color: #A0CDAC; }
+    color: #a3c9be; }
 
 main section .cafe {
   display: flex;
@@ -167,7 +167,7 @@ main section .cafe {
   flex-wrap: wrap; }
   main section .cafe div {
     width: 300px;
-    border: #A0CDAC 1px solid;
+    border: #a3c9be 1px solid;
     text-align: center;
     border-radius: 10%;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
@@ -187,7 +187,7 @@ main section .cafe {
       display: inline-block;
       padding: 10px;
       margin: 5px;
-      background-color: #A0CDAC;
+      background-color: #a3c9be;
       border-radius: 20px; }
       main section .cafe div select option {
         border-radius: 20px; }
@@ -197,7 +197,7 @@ main section .cafe {
       display: inline-block;
       margin: 5px;
       padding: 10px;
-      background-color: #A0CDAC;
+      background-color: #a3c9be;
       border-radius: 20px; }
 
 main .contenedor {
@@ -208,7 +208,7 @@ main .contenedor {
   main .contenedor .presentacion {
     grid-area: presentacion; }
     main .contenedor .presentacion h1 {
-      color: #000000;
+      color: #0f3433;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: normal;
       font-size: 35px;
@@ -219,7 +219,7 @@ main .contenedor {
   main .contenedor .paula {
     width: 500px;
     height: 500px;
-    border: #A0CDAC 1px solid;
+    border: #a3c9be 1px solid;
     border-radius: 10%;
     margin: auto;
     grid-area: paula; }
@@ -237,7 +237,7 @@ main .contenedor {
     grid-area: bar; }
 
 footer {
-  background-color: #A0CDAC;
+  background-color: #a3c9be;
   margin-top: auto; }
   footer p {
     font-size: medium; }
