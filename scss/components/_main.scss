@@ -1,57 +1,66 @@
-main{
-    .hero{
-        h1{
-            color:$color-textos;
-            font-size:nth($font-size,6);
+main {
+    .hero {
+        h1 {
+            color: $color-textos;
+            font-size: nth($font-size, 6);
             font-weight: 400;
             @extend %texto;
             margin: 10px;
         }
     }
+
     .carousel {
         width: 600px;
         margin: auto;
+
         div {
-            button{
-                span{
+            button {
+                span {
                     background-color: rgba(128, 128, 128, 0.226);
                 }
             }
         }
     }
-    section{
-        div{
-            .cajita{
-                .productos{
+
+    section {
+        div {
+            .cajita {
+                .productos {
                     @include row (flex, space-around);
                     flex-wrap: wrap;
-                    div{
-                        width:map-get($tarjeta,ancho );
-                        border:map-get($tarjeta,borde);
-                        text-align:map-get($tarjeta, text-align);
-                        border-radius:map-get($tarjeta,border-radius);
-                        box-shadow: map-get($tarjeta,sombra );
-                        transition-property:map-get($tarjeta,transition );
-                        transition-duration: map-get($tarjeta,duracion );
+
+                    div {
+                        width: map-get($tarjeta, ancho);
+                        border: map-get($tarjeta, borde);
+                        text-align: map-get($tarjeta, text-align);
+                        border-radius: map-get($tarjeta, border-radius);
+                        box-shadow: map-get($tarjeta, sombra);
+                        transition-property: map-get($tarjeta, transition);
+                        transition-duration: map-get($tarjeta, duracion);
                         margin: 20px;
-                        &:hover{
+
+                        &:hover {
                             box-shadow: 0px 3px 19px 5px rgba(16, 16, 16, 0.329);
                         }
-                            img{
-                                @include tamano(300px, 300px);
-                                border-radius: 10%;
-                                padding: 20px;}
-                        h3{
+
+                        img {
+                            @include tamano(300px, 300px);
+                            border-radius: 10%;
+                            padding: 20px;
+                        }
+
+                        h3 {
                             font-weight: 200;
                             @extend %texto;
                         }
-                        a{
+
+                        a {
                             text-decoration: none;
-                            color:$color-claro;
+                            color: $color-claro;
                             display: inline-block;
                             margin: 10px;
                             padding: 10px;
-                            background-color:$color-principal;
+                            background-color: $color-principal;
                             border-radius: 20px;
                             font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
                             font-style: normal;

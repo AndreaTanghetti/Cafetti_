@@ -1,15 +1,17 @@
 main {
     section {
         .formulario {
-            @include flex(flex, column, center );
+            @include flex(flex, column, center);
             margin: 30px;
+
             div {
                 label {
                     color: $color-principal;
                     font-weight: 500;
-                    font-size:nth($font-size,3);
+                    font-size: nth($font-size, 3);
                     @include row (flex, center);
                 }
+
                 input {
                     border-radius: 10px;
                     margin: 5px;
@@ -17,6 +19,7 @@ main {
                     @include row (flex, center);
                 }
             }
+
             div {
                 a:not(.contrasenia) {
                     color: $color-claro;
@@ -26,17 +29,19 @@ main {
                     border-radius: 20px;
                     text-decoration: none;
                     @include row (flex, center);
-                    font-size: nth($font-size,3);
+                    font-size: nth($font-size, 3);
                 }
+
                 .contrasenia {
                     color: $color-principal;
-                    font-size: nth($font-size,2);
+                    font-size: nth($font-size, 2);
                     @include row (flex, center);
                 }
             }
+
             div {
                 p {
-                    font-size: nth($font-size,2);
+                    font-size: nth($font-size, 2);
                     font-weight: 500;
                     color: $color-principal;
                     @extend %texto;

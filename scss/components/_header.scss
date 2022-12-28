@@ -3,28 +3,31 @@ header {
         @include row (flex, center);
         background-color: $color-principal;
     }
+
     .navbar {
         padding-top: 0;
         padding-bottom: 0;
         @extend %texto;
+
         .container-fluid {
             padding-left: 0;
-            padding-right: 0;
             background-color: $color-principal;
+
             .navbar-toggler {
                 color: #a0cdac00;
-                }
-                .collapse {
-                    .navbar-nav {
-                        .nav-item {
-                            .nav-link {
-                                border-radius: 20px;
-                                font-size: nth($font-size,3);
-                                transition: 0.5s;
-                                &:hover {
-                                    color: $color-claro;
-                                    background-color: $color-hover;
-                                }
+            }
+
+            .collapse {
+                .navbar-nav {
+                    .nav-item {
+                        .nav-link {
+                            border-radius: 20px;
+                            font-size: nth($font-size, 3);
+                            transition: 0.5s;
+
+                            &:hover {
+                                color: $color-claro;
+                                background-color: $color-hover;
                             }
                         }
                     }
@@ -32,20 +35,4 @@ header {
             }
         }
     }
-    .d-flex {
-        width: 250px;
-        .form-control {
-            font-size: nth($font-size,2);
-            padding: 0;
-        }
-        .btn-outline-success {
-            color: $color-textos;
-            border-color: #88b293;
-            border-radius: 30%;
-            font-size: nth($font-size,2);
-            &:hover {
-                background-color: $color-hover;
-                color: $color-claro;
-            }
-        }
-    }
+}

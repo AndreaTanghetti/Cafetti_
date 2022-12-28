@@ -53,7 +53,6 @@ header .navbar {
   padding-bottom: 0; }
   header .navbar .container-fluid {
     padding-left: 0;
-    padding-right: 0;
     background-color: #a3c9be; }
     header .navbar .container-fluid .navbar-toggler {
       color: #a0cdac00; }
@@ -64,20 +63,6 @@ header .navbar {
       header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
         color: #fff7f5;
         background-color: #f3b65a; }
-
-.d-flex {
-  width: 250px; }
-  .d-flex .form-control {
-    font-size: 15px;
-    padding: 0; }
-  .d-flex .btn-outline-success {
-    color: #0f3433;
-    border-color: #88b293;
-    border-radius: 30%;
-    font-size: 15px; }
-    .d-flex .btn-outline-success:hover {
-      background-color: #f3b65a;
-      color: #fff7f5; }
 
 main .hero h1 {
   color: #0f3433;
@@ -304,17 +289,12 @@ footer {
       height: 350px; }
   main .contenedor .baristas .b1 {
     display: none; }
+  header .logo img {
+    width: 250px; }
   header .navbar .container-fluid .navbar-toggler {
-    font-size: 15px; }
-  header .d-flex {
-    justify-content: flex-end;
-    width: 200px; }
-    header .d-flex .form-control {
-      font-size: 10px; }
-    header .d-flex .btn-outline-success {
-      font-size: 10px; } }
+    font-size: 15px; } }
 
-@media screen and (max-width: 357px) {
+@media screen and (max-width: 460px) and (max-width: 357px) {
   main .hero h1 {
     font-size: 25px;
     margin: 5px; }

@@ -6,6 +6,7 @@
 
 html {
     @include tamano(100%, 100%);
+
     body {
         background-color: $color-claro;
         @include tamano(100%, 100%);

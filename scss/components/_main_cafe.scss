@@ -1,48 +1,54 @@
-main{
-    section{
-        .cafe{
+main {
+    section {
+        .cafe {
             @include row (flex, space-around);
             flex-wrap: wrap;
-                div{
-                    width:map-get($tarjeta,ancho );
-                    border:map-get($tarjeta,borde);
-                    text-align:map-get($tarjeta, text-align);
-                    border-radius:map-get($tarjeta,border-radius);
-                    box-shadow: map-get($tarjeta,sombra );
-                    transition-property:map-get($tarjeta,transition );
-                    transition-duration: map-get($tarjeta,duracion );
-                    margin: 50px;
-                    &:hover{
-                        box-shadow: 0px 3px 19px 5px rgba(16, 16, 16, 0.329);}
-                    
-                    img{
-                        @include tamano(300px, 300px);
-                        border-radius: 10%;
-                        padding: 20px;
-                    }
-                    select{
-                        text-decoration: none;
-                        color:$color-claro;
-                        display: inline-block;
-                        padding: 10px;
-                        margin: 5px;
-                        background-color:$color-principal;
-                        border-radius: 20px;
-                        option{
-                            border-radius: 20px;
-                        }
-                    }
-                    a{
-                        text-decoration: none;
-                        color:$color-claro;
-                        display: inline-block;
-                        margin: 5px;
-                        padding: 10px;
-                        background-color: $color-principal;
+
+            div {
+                width: map-get($tarjeta, ancho);
+                border: map-get($tarjeta, borde);
+                text-align: map-get($tarjeta, text-align);
+                border-radius: map-get($tarjeta, border-radius);
+                box-shadow: map-get($tarjeta, sombra);
+                transition-property: map-get($tarjeta, transition);
+                transition-duration: map-get($tarjeta, duracion);
+                margin: 50px;
+
+                &:hover {
+                    box-shadow: 0px 3px 19px 5px rgba(16, 16, 16, 0.329);
+                }
+
+                img {
+                    @include tamano(300px, 300px);
+                    border-radius: 10%;
+                    padding: 20px;
+                }
+
+                select {
+                    text-decoration: none;
+                    color: $color-claro;
+                    display: inline-block;
+                    padding: 10px;
+                    margin: 5px;
+                    background-color: $color-principal;
+                    border-radius: 20px;
+
+                    option {
                         border-radius: 20px;
                     }
+                }
+
+                a {
+                    text-decoration: none;
+                    color: $color-claro;
+                    display: inline-block;
+                    margin: 5px;
+                    padding: 10px;
+                    background-color: $color-principal;
+                    border-radius: 20px;
+
                 }
             }
         }
     }
-
+}

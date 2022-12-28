@@ -11,6 +11,7 @@
                 "propuesta propuesta "
                 "bar bar ";
         }
+
         .baristas {
             .b4 {
                 display: none;
@@ -34,6 +35,7 @@
             ;
         }
     }
+
     main {
         section {
             .cafe {
@@ -58,12 +60,15 @@
                 "propuesta"
                 "bar ";
             ;
+
             .paula {
                 @include tamano(380px, 380px);
+
                 img {
                     @include tamano(380px, 380px);
                 }
             }
+
             .baristas {
                 .b3 {
                     display: none;
@@ -71,12 +76,14 @@
             }
         }
     }
+
     main {
         .carousel {
             width: auto;
             margin: 10px;
         }
     }
+
     main {
         section {
             div {
@@ -112,6 +119,12 @@
     }
 
     header {
+        .logo {
+            img {
+                width: 250px;
+            }
+        }
+
         .navbar {
             .container-fluid {
                 .navbar-toggler {
@@ -119,82 +132,80 @@
                 }
             }
         }
-        .d-flex {
-            justify-content: flex-end;
-            width: 200px;
-            .form-control {
-                font-size: nth($font-size, 1);
-            }
-            .btn-outline-success {
-                font-size: nth($font-size, 1);
-            }
-        }
     }
-}
 
-@media screen and (max-width:357px) {
-    main {
-        .hero {
-            h1 {
-                font-size: nth($font-size, 4);
-                margin: 5px;
-            }
-        }
-        section {
-            div {
-                h2 {
+    @media screen and (max-width:357px) {
+        main {
+            .hero {
+                h1 {
                     font-size: nth($font-size, 4);
+                    margin: 5px;
                 }
-                .cajita {
-                    .productos {
-                        div {
-                            width: 200px;
-                            img {
-                                @include tamano(200px, 200px);
-                                border-radius: 10%;
+            }
+
+            section {
+                div {
+                    h2 {
+                        font-size: nth($font-size, 4);
+                    }
+
+                    .cajita {
+                        .productos {
+                            div {
+                                width: 200px;
+
+                                img {
+                                    @include tamano(200px, 200px);
+                                    border-radius: 10%;
+                                }
                             }
                         }
                     }
                 }
             }
         }
-    }
 
-    main {
-        section {
-            div{
-                h1{
-                    font-size:nth($font-size, 3);
-                }
-            }
-        }
-    }
-    main{
-        .contenedor{
-            div{
-                h2{
-                    font-size:nth($font-size, 5);
-
-                }
-            }
-        }
-    }
-    main {
-        section {
-            .cafe {
+        main {
+            section {
                 div {
-                    width: 230px;
-                    img {
-                        width: 100%;
-                        height: 220px;
-                        border: 15px;
+                    h1 {
+                        font-size: nth($font-size, 3);
                     }
-                    select {
-                        font-size: nth($font-size, 2);
-                        padding: 5px;
+                }
+            }
+        }
+
+        main {
+            .contenedor {
+                div {
+                    h2 {
+                        font-size: nth($font-size, 5);
+
                     }
-                    a {
-                        font-size: nth($font-size, 2);
+                }
+            }
+        }
+
+        main {
+            section {
+                .cafe {
+                    div {
+                        width: 230px;
+
+                        img {
+                            width: 100%;
+                            height: 220px;
+                            border: 15px;
+                        }
+
+                        select {
+                            font-size: nth($font-size, 2);
+                            padding: 5px;
+                        }
+
+                        a {
+                            font-size: nth($font-size, 2);
+                        }
                     }
                 }
             }

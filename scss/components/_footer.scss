@@ -1,21 +1,26 @@
-footer{
-    background-color:$color-principal;
+footer {
+    background-color: $color-principal;
     margin-top: auto;
-    p{
+
+    p {
         @extend %texto;
         font-size: medium;
     }
-    .contactos{
+
+    .contactos {
         @include row (flex, center);
         margin: 10px;
-        a{
-            @include tamano(30px ,30px );
+
+        a {
+            @include tamano(30px, 30px);
             margin: 0px 10px 0px 10px;
             transition: 1s;
-            &:hover{
+
+            &:hover {
                 transform: scale(1.1);
             }
-            img{
+
+            img {
                 @include tamano(30px, 30px);
                 display: block;
             }
