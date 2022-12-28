@@ -133,79 +133,79 @@
             }
         }
     }
+}
 
-    @media screen and (max-width:357px) {
-        main {
-            .hero {
-                h1 {
-                    font-size: nth($font-size, 4);
-                    margin: 5px;
-                }
+@media screen and (max-width:357px) {
+    main {
+        .hero {
+            h1 {
+                font-size: nth($font-size, 4);
+                margin: 5px;
             }
+        }
 
-            section {
-                div {
-                    h2 {
-                        font-size: nth($font-size, 4);
-                    }
+        section {
+            div {
+                h2 {
+                    font-size: nth($font-size, 4);
+                }
 
-                    .cajita {
-                        .productos {
-                            div {
-                                width: 200px;
+                .cajita {
+                    .productos {
+                        div {
+                            width: 200px;
 
-                                img {
-                                    @include tamano(200px, 200px);
-                                    border-radius: 10%;
-                                }
+                            img {
+                                @include tamano(200px, 200px);
+                                border-radius: 10%;
                             }
                         }
                     }
                 }
             }
         }
+    }
 
-        main {
-            section {
-                div {
-                    h1 {
-                        font-size: nth($font-size, 3);
-                    }
+    main {
+        section {
+            div {
+                h1 {
+                    font-size: nth($font-size, 3);
                 }
             }
         }
+    }
 
-        main {
-            .contenedor {
-                div {
-                    h2 {
-                        font-size: nth($font-size, 5);
+    main {
+        .contenedor {
+            div {
+                h2 {
+                    font-size: nth($font-size, 5);
 
-                    }
                 }
             }
         }
+    }
 
-        main {
-            section {
-                .cafe {
-                    div {
-                        width: 230px;
+    main {
+        section {
+            .cafe {
+                div {
+                    width: 230px;
 
-                        img {
-                            width: 100%;
-                            height: 220px;
-                            border: 15px;
-                        }
+                    img {
+                        width: 100%;
+                        height: 220px;
+                        border: 15px;
+                    }
 
-                        select {
-                            font-size: nth($font-size, 2);
-                            padding: 5px;
-                        }
+                    select {
+                        font-size: nth($font-size, 2);
+                        padding: 5px;
+                    }
 
-                        a {
-                            font-size: nth($font-size, 2);
-                        }
+                    a {
+                        font-size: nth($font-size, 2);
                     }
                 }
             }

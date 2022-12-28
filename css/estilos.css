@@ -294,7 +294,7 @@ footer {
   header .navbar .container-fluid .navbar-toggler {
     font-size: 15px; } }
 
-@media screen and (max-width: 460px) and (max-width: 357px) {
+@media screen and (max-width: 357px) {
   main .hero h1 {
     font-size: 25px;
     margin: 5px; }
