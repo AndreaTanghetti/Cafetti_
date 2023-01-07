@@ -1,30 +1,8 @@
-@media screen and (max-width:1186px) {
+@media screen and (max-width:977px) {
     main {
         .contenedor {
             display: grid;
-            grid-template-rows: 300px 500px 500px 200px 200px;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-areas:
-                "presentacion presentacion "
-                "quien quien "
-                "paula paula"
-                "propuesta propuesta "
-                "bar bar ";
-        }
-
-        .baristas {
-            .b4 {
-                display: none;
-            }
-        }
-    }
-}
-
-@media screen and (max-width:918px) {
-    main {
-        .contenedor {
-            display: grid;
-            grid-template-rows: auto 550px 500px auto 200px;
+            grid-template-rows: 500px 600px 500px auto 200px;
             grid-template-columns: 1fr;
             grid-template-areas:
                 "presentacion "
@@ -33,6 +11,22 @@
                 "propuesta"
                 "bar "
             ;
+            .presentacion{
+                div{
+                    width: 100%;
+                }
+            }
+            .quien{
+                div{
+                    margin: 0;
+                    width: 100%;
+                }
+            }
+        }
+        .baristas{
+            .b4{
+                display: none;
+            }
         }
     }
 
@@ -51,7 +45,7 @@
     main {
         .contenedor {
             display: grid;
-            grid-template-rows: auto auto 400px auto 200px;
+            grid-template-rows: 600px 700px  420px 450px 200px;
             grid-template-columns: 1fr;
             grid-template-areas:
                 "presentacion "
@@ -59,7 +53,7 @@
                 "paula"
                 "propuesta"
                 "bar ";
-            ;
+            
 
             .paula {
                 @include tamano(380px, 380px);
@@ -98,25 +92,57 @@
         }
     }
 }
-
-@media screen and (max-width:460px) {
+@media screen and (max-width:617px){
     main {
         .contenedor {
-            .paula {
-                @include tamano(300px, 350px);
+            display: grid;
+            grid-template-rows: 800px 800px auto 600px 200px;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "presentacion "
+                "quien "
+                "paula"
+                "propuesta"
+                "bar ";
+            
+            .propuesta{
+                img{
+                    @include tamano(100%, 100%);
 
-                img {
-                    @include tamano(300px, 350px);
-                }
-            }
-
-            .baristas {
-                .b1 {
-                    display: none;
                 }
             }
         }
     }
+}
+@media screen and (max-width:531px){
+
+main {
+    .contenedor {
+        display: grid;
+        grid-template-rows:950px 1100px 400px 850px 200px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "presentacion "
+            "quien "
+            "paula"
+            "propuesta"
+            "bar ";
+            .paula{
+                @include tamano(350px, 350px);
+                img{
+                    @include tamano(350px, 350px);
+                }
+            }
+        .baristas {
+            .b1 {
+                display: none;
+            }
+        
+    }
+}
+}
+}
+@media screen and (max-width:460px) {
 
     header {
         .logo {
@@ -178,6 +204,21 @@
 
     main {
         .contenedor {
+            display: grid;
+            grid-template-rows:920px 1230px 320px 885px 200px;
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "presentacion "
+                "quien "
+                "paula"
+                "propuesta"
+                "bar ";
+                .paula{
+                    @include tamano(300px, 300px);
+                    img{
+                        @include tamano(300px, 300px);
+                    }
+                }
             div {
                 h2 {
                     font-size: nth($font-size, 5);
@@ -194,8 +235,7 @@
                     width: 230px;
 
                     img {
-                        width: 100%;
-                        height: 220px;
+                        @include tamano(100%, 200px);
                         border: 15px;
                     }
 

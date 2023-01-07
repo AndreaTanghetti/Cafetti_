@@ -1,123 +1,134 @@
-
 main {
-    section {
-
+    .contenedor {
+        display: grid;
+        grid-template-rows: 620px 800px 500px 200px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "none presentacion presentacion presentacion"
+            "quien quien paula paula"
+            "propuesta propuesta propuesta propuesta"
+            "bar bar bar bar"
+        ;
 
         .presentacion {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            grid-area: presentacion;
 
             img {
-                width: 45%;
-                height: 45%;
+                @include tamano(80%, 80%);
                 position: relative;
+                opacity: 0.5;
             }
 
             div {
-                h1{
+                h2 {
                     text-align: left;
                 }
-                p{
-                    font-weight: 600;
+
+                p {
+                    font-weight: 500;
                 }
+
                 position: absolute;
                 width: 45%;
-                height: 60%;
                 top: 300px;
                 padding: 40px;
                 background: rgba(244, 235, 235, 0.04);
                 border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                backdrop-filter: blur(1.7px);
-                -webkit-backdrop-filter: blur(1.7px);
                 border: 1px solid rgba(244, 235, 235, 0.82);
                 border-radius: 25px;
                 line-height: 25px;
             }
+
         }
 
-        .quien{
+        .quien {
+            grid-area: quien;
             display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content:space-between;
-
-             
-                img {
-                    position: relative;
-                    width: 700px;
-                    height: 700px;
-                }
-
-                .info {
-                    h2{
-                        text-align: left;
-                    }
-                    p{
-                        font-weight: 600;
-                    }
-                    position: absolute;
-                    text-align: left;
-                    width: 613px;
-                    padding: 40px;
-                    background: rgba(244, 235, 235, 0.04);
-                    border-radius: 16px;
-                    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(1.7px);
-                    -webkit-backdrop-filter: blur(1.7px);
-                    border: 1px solid rgba(244, 235, 235, 0.82);
-                    border-radius: 25px;
-                    line-height: 25px;
-                }
-            }
-
-            .paula {
-                @include tamano(500px, 500px);
-                border-radius: 10%;
-                margin: 50px;
-                // margin-right: 30px;
-
-                img {
-                    @include tamano(500px, 500px);
-                    border: $color-principal 1px solid;
-                    border-radius: 10%;
-                    padding: 20px;
-                    object-fit: cover;
-                }
-            }
-        
-
-        .propuesta {
-            display: flex;
-            justify-content:center;
+            align-items: left;
 
             img {
+                @include tamano(80%, 80%);
                 position: relative;
+                opacity: 0.5;
             }
 
-            .info2 {
-                h2{
+            div {
+                h2 {
                     text-align: left;
                 }
-                p{
-                    font-weight: 600;
+
+                p {
+                    font-weight: 500;
                 }
+
                 position: absolute;
-                text-align: left;
-                width: 60%;
-                height: auto;
+                width: 50%;
                 padding: 40px;
                 background: rgba(244, 235, 235, 0.04);
                 border-radius: 16px;
-                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
                 backdrop-filter: blur(1.7px);
-                -webkit-backdrop-filter: blur(1.7px);
                 border: 1px solid rgba(244, 235, 235, 0.82);
                 border-radius: 25px;
+                line-height: 25px;
+                margin-left: 20px;
                 margin-top: 50px;
+
+            }
+        }
+
+        .paula {
+            display: flex;
+            flex-wrap: wrap;
+            @include tamano(500px, 500px);
+            border: $color-principal 1px solid;
+            border-radius: 10%;
+            margin: auto;
+            grid-area: paula;
+
+            img {
+                @include tamano(500px, 500px);
+                padding: 20px;
+                border-radius: 10%;
+                object-fit: cover;
+            }
+        }
+
+        .propuesta {
+            grid-area: propuesta;
+            display: flex;
+            justify-content: center;
+
+            img {
+                position: relative;
+                opacity: 0.5;
+            }
+
+            .info2 {
+                h2 {
+                    text-align: left;
+                }
+
+                p {
+                    font-weight: 500;
+                }
+
+                position: absolute;
+                width: 80%;
+                padding: 40px;
+                border-radius: 16px;
+                backdrop-filter: blur(1.7px);
+                border: 1px solid rgba(244, 235, 235, 0.82);
+                border-radius: 25px;
+                line-height: 25px;
+                margin-top: 10%;
             }
 
         }
-    
-    }}
+
+        .baristas {
+            display: flex;
+            justify-content: space-evenly;
+            grid-area: bar;
+        }
+    }
+}
