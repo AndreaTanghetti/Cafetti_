@@ -1,4 +1,4 @@
-header .navbar, main .hero h1, main section div .cajita .productos div h3, main section .formulario div p, main .contenedor .presentacion h1, footer p {
+header .navbar, main .hero h1, main section div .cajita .productos div h3, main section .formulario div p, footer p {
   text-align: center; }
 
 * {
@@ -36,8 +36,7 @@ h2 {
 p {
   color: #0f3433;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-style: normal;
-  margin: 10px; }
+  font-style: normal; }
 
 a {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -168,58 +167,112 @@ main section .cafe {
       padding: 20px; }
     main section .cafe div select {
       text-decoration: none;
-      color: #fff7f5;
+      color: #0f3433;
       display: inline-block;
       padding: 10px;
       margin: 5px;
-      background-color: #a3c9be;
       border-radius: 20px; }
       main section .cafe div select option {
         border-radius: 20px; }
     main section .cafe div a {
       text-decoration: none;
-      color: #fff7f5;
+      color: #0f3433;
       display: inline-block;
       margin: 5px;
       padding: 10px;
       background-color: #a3c9be;
       border-radius: 20px; }
 
-main .contenedor {
-  display: grid;
-  grid-template-rows: 300px 600px 200px 200px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: "presentacion presentacion presentacion presentacion" "quien quien paula paula" "propuesta propuesta propuesta propuesta" "bar bar bar bar"; }
-  main .contenedor .presentacion {
-    grid-area: presentacion; }
-    main .contenedor .presentacion h1 {
-      color: #0f3433;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-style: normal;
-      font-size: 35px;
-      font-weight: 450; }
-  main .contenedor .quien {
-    margin: auto;
-    grid-area: quien; }
-  main .contenedor .paula {
+main section .presentacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  main section .presentacion img {
+    width: 45%;
+    height: 45%;
+    position: relative; }
+  main section .presentacion div {
+    position: absolute;
+    width: 45%;
+    height: 60%;
+    top: 300px;
+    padding: 40px;
+    background: rgba(244, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(244, 235, 235, 0.82);
+    border-radius: 25px;
+    line-height: 25px; }
+    main section .presentacion div h1 {
+      text-align: left; }
+    main section .presentacion div p {
+      font-weight: 600; }
+
+main section .quien {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  main section .quien img {
+    position: relative;
+    width: 700px;
+    height: 700px; }
+  main section .quien .info {
+    position: absolute;
+    text-align: left;
+    width: 613px;
+    padding: 40px;
+    background: rgba(244, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(244, 235, 235, 0.82);
+    border-radius: 25px;
+    line-height: 25px; }
+    main section .quien .info h2 {
+      text-align: left; }
+    main section .quien .info p {
+      font-weight: 600; }
+
+main section .paula {
+  width: 500px;
+  height: 500px;
+  border-radius: 10%;
+  margin: 50px; }
+  main section .paula img {
     width: 500px;
     height: 500px;
     border: #a3c9be 1px solid;
     border-radius: 10%;
-    margin: auto;
-    grid-area: paula; }
-    main .contenedor .paula img {
-      width: 500px;
-      height: 500px;
-      padding: 20px;
-      border-radius: 10%;
-      object-fit: cover; }
-  main .contenedor .propuesta {
-    grid-area: propuesta; }
-  main .contenedor .baristas {
-    display: flex;
-    justify-content: space-evenly;
-    grid-area: bar; }
+    padding: 20px;
+    object-fit: cover; }
+
+main section .propuesta {
+  display: flex;
+  justify-content: center; }
+  main section .propuesta img {
+    position: relative; }
+  main section .propuesta .info2 {
+    position: absolute;
+    text-align: left;
+    width: 60%;
+    height: auto;
+    padding: 40px;
+    background: rgba(244, 235, 235, 0.04);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.7px);
+    -webkit-backdrop-filter: blur(1.7px);
+    border: 1px solid rgba(244, 235, 235, 0.82);
+    border-radius: 25px;
+    margin-top: 50px; }
+    main section .propuesta .info2 h2 {
+      text-align: left; }
+    main section .propuesta .info2 p {
+      font-weight: 600; }
 
 footer {
   background-color: #a3c9be;

@@ -26,11 +26,11 @@ main {
 
                 select {
                     text-decoration: none;
-                    color: $color-claro;
+                    color: $color-textos;
                     display: inline-block;
                     padding: 10px;
                     margin: 5px;
-                    background-color: $color-principal;
+                    // background-color: $color-principal;
                     border-radius: 20px;
 
                     option {
@@ -40,7 +40,7 @@ main {
 
                 a {
                     text-decoration: none;
-                    color: $color-claro;
+                    color: $color-textos;
                     display: inline-block;
                     margin: 5px;
                     padding: 10px;
