@@ -1,4 +1,4 @@
-header .navbar, main .hero h1, main section div .cajita .productos div h3, main section .formulario div p, footer p {
+header .navbar, main .hero h1, main section div .cajita .productos div h3, footer p {
   text-align: center; }
 
 * {
@@ -52,7 +52,9 @@ header .navbar {
   padding-bottom: 0; }
   header .navbar .container-fluid {
     padding-left: 0;
-    background-color: #a3c9be; }
+    background-color: #a3c9be;
+    position: relative;
+    z-index: 1; }
     header .navbar .container-fluid .navbar-toggler {
       color: #a0cdac00; }
     header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
@@ -106,44 +108,73 @@ main section div .cajita .productos {
       background-color: #a3c9be;
       border-radius: 20px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-      font-style: normal; }
+      font-style: normal;
+      width: 90%; }
 
-main section .formulario {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin: 30px; }
-  main section .formulario div label {
-    color: #a3c9be;
-    font-weight: 500;
-    font-size: 20px;
-    display: flex;
-    justify-content: center; }
-  main section .formulario div input {
-    border-radius: 10px;
-    margin: 5px;
-    padding: 10px;
-    display: flex;
-    justify-content: center; }
-  main section .formulario div a:not(.contrasenia) {
-    color: #fff7f5;
-    background-color: #a3c9be;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 20px;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    font-size: 20px; }
-  main section .formulario div .contrasenia {
-    color: #a3c9be;
-    font-size: 15px;
-    display: flex;
-    justify-content: center; }
-  main section .formulario div p {
-    font-size: 15px;
-    font-weight: 500;
-    color: #a3c9be; }
+main section .cuenta {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: "img form" "img form";
+  gap: 5px; }
+  main section .cuenta img {
+    width: 100%;
+    height: 100%;
+    grid-area: img; }
+  main section .cuenta .formulario {
+    grid-area: form;
+    width: 100%;
+    align-self: center; }
+    main section .cuenta .formulario div label {
+      color: #a3c9be;
+      font-weight: 500;
+      font-size: 20px; }
+    main section .cuenta .formulario div input {
+      border-radius: 10px;
+      margin: 5px;
+      padding: 10px;
+      width: 80%; }
+    main section .cuenta .formulario div {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      main section .cuenta .formulario div div .ingreso {
+        color: #0f3433;
+        border-radius: 20px;
+        text-decoration: none;
+        padding: 10px;
+        border: #a3c9be 1px solid;
+        text-align: center;
+        width: 80%; }
+      main section .cuenta .formulario div div .contrasenia {
+        color: #a3c9be;
+        text-align: center; }
+      main section .cuenta .formulario div div .p {
+        margin: 0px;
+        color: #a3c9be;
+        font-weight: 500;
+        text-align: center; }
+      main section .cuenta .formulario div div .crear {
+        color: #fff7f5;
+        background-color: #a3c9be;
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        text-decoration: none;
+        font-size: 20px;
+        text-align: center;
+        width: 80%; }
+
+main section .cuenta div .crear {
+  color: #fff7f5;
+  background-color: #a3c9be;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 20px;
+  text-align: center;
+  width: 200px; }
 
 main section .cafe {
   display: flex;
@@ -171,7 +202,8 @@ main section .cafe {
       display: inline-block;
       padding: 10px;
       margin: 5px;
-      border-radius: 20px; }
+      border-radius: 20px;
+      width: 90%; }
       main section .cafe div select option {
         border-radius: 20px; }
     main section .cafe div a {
@@ -181,7 +213,8 @@ main section .cafe {
       margin: 5px;
       padding: 10px;
       background-color: #a3c9be;
-      border-radius: 20px; }
+      border-radius: 20px;
+      width: 90%; }
 
 main .contenedor {
   display: grid;
@@ -343,6 +376,13 @@ footer {
       height: 100%; } }
 
 @media screen and (max-width: 531px) {
+  main section .cuenta {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr;
+    grid-template-areas: "form"; }
+    main section .cuenta .img {
+      display: none; }
   main .contenedor {
     display: grid;
     grid-template-rows: 950px 1100px 400px 850px 200px;

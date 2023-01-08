@@ -1,50 +1,110 @@
 main {
     section {
-        .formulario {
-            @include flex(flex, column, center);
-            margin: 30px;
+        .cuenta {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas:
+                "img form"
+                "img form";
+            gap: 5px;
 
-            div {
-                label {
-                    color: $color-principal;
-                    font-weight: 500;
-                    font-size: nth($font-size, 3);
-                    @include row (flex, center);
-                }
+            img {
+                width: 100%;
+                height: 100%;
+                grid-area: img;
 
-                input {
-                    border-radius: 10px;
-                    margin: 5px;
-                    padding: 10px;
-                    @include row (flex, center);
-                }
             }
 
+            .formulario {
+                grid-area: form;
+                width: 100%;
+                align-self: center;
+
+                div {
+
+                    label {
+                        color: $color-principal;
+                        font-weight: 500;
+                        font-size: nth($font-size, 3);
+                    }
+
+                    input {
+                        border-radius: 10px;
+                        margin: 5px;
+                        padding: 10px;
+                        width: 80%;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+
+                    div {
+                        .ingreso {
+                            color: $color-textos;
+                            border-radius: 20px;
+                            text-decoration: none;
+                            padding: 10px;
+                            border: $color-principal 1px solid;
+                            text-align: center;
+                            width: 80%;
+                        }
+
+                        .contrasenia {
+                            color: $color-principal;
+                            text-align: center;
+                        }
+                    }
+
+                    div {
+
+                        .p {
+                            margin: 0px;
+                            color: $color-principal;
+                            font-weight: 500;
+                            text-align: center;
+
+                        }
+
+                        .crear {
+                            color: $color-claro;
+                            background-color: $color-principal;
+                            margin: 10px;
+                            padding: 10px;
+                            border-radius: 20px;
+                            text-decoration: none;
+                            font-size: nth($font-size, 3);
+                            text-align: center;
+                            width: 80%;
+
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
+// MAIN CREAR CUENTA
+main {
+    section {
+        .cuenta {
             div {
-                a:not(.contrasenia) {
+                .crear {
                     color: $color-claro;
                     background-color: $color-principal;
                     margin: 10px;
                     padding: 10px;
                     border-radius: 20px;
                     text-decoration: none;
-                    @include row (flex, center);
                     font-size: nth($font-size, 3);
-                }
-
-                .contrasenia {
-                    color: $color-principal;
-                    font-size: nth($font-size, 2);
-                    @include row (flex, center);
-                }
-            }
-
-            div {
-                p {
-                    font-size: nth($font-size, 2);
-                    font-weight: 500;
-                    color: $color-principal;
-                    @extend %texto;
+                    text-align: center;
+                    width: 200px;
                 }
             }
         }

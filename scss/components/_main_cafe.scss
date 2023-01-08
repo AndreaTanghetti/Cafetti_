@@ -30,8 +30,8 @@ main {
                     display: inline-block;
                     padding: 10px;
                     margin: 5px;
-                    // background-color: $color-principal;
                     border-radius: 20px;
+                    width: 90%;
 
                     option {
                         border-radius: 20px;
@@ -46,6 +46,7 @@ main {
                     padding: 10px;
                     background-color: $color-principal;
                     border-radius: 20px;
+                    width: 90%;
 
                 }
             }

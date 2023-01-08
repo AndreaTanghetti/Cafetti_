@@ -12,6 +12,8 @@ header {
         .container-fluid {
             padding-left: 0;
             background-color: $color-principal;
+            position: relative;
+            z-index: 1;
 
             .navbar-toggler {
                 color: #a0cdac00;
