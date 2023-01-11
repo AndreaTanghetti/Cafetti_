@@ -8,6 +8,7 @@ header {
         padding-top: 0;
         padding-bottom: 0;
         @extend %texto;
+        height: auto;
 
         .container-fluid {
             padding-left: 0;
@@ -35,6 +36,47 @@ header {
                     }
                 }
             }
+        }
+
+        .icono {
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            position: absolute;
+            right: 0;
+            top: 0;
+            margin-right: 10px;
+
+            a {
+                display: flex;
+                flex-direction: column;
+                text-decoration: none;
+                font-size: nth($font-size, 2);
+                font-weight: 500;
+                color: $color-textos;
+                margin-left:5px ;
+                margin-right: 5px;
+
+                img {
+                    justify-content: center;
+                    width: 30px;
+                    height: 30px;
+                    margin: auto;
+                    transition: 0.5s;
+
+                    &:hover {
+                        color: $color-claro;
+                        background-color: $color-hover;
+                        transform: scale(1.5);
+                        border-radius: 20px;
+
+                        padding: 5px;
+
+                    }
+                }
+            }
+
+
         }
     }
 }

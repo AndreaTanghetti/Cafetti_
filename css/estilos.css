@@ -1,4 +1,4 @@
-header .navbar, main .hero h1, main section div .cajita .productos div h3, footer p {
+header .navbar, main section div .cajita .productos div h3, footer p {
   text-align: center; }
 
 * {
@@ -49,7 +49,8 @@ header .logo {
 
 header .navbar {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  height: auto; }
   header .navbar .container-fluid {
     padding-left: 0;
     background-color: #a3c9be;
@@ -64,18 +65,88 @@ header .navbar {
       header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
         color: #fff7f5;
         background-color: #f3b65a; }
+  header .navbar .icono {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-right: 10px; }
+    header .navbar .icono a {
+      display: flex;
+      flex-direction: column;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 500;
+      color: #0f3433;
+      margin-left: 5px;
+      margin-right: 5px; }
+      header .navbar .icono a img {
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        margin: auto;
+        transition: 0.5s; }
+        header .navbar .icono a img:hover {
+          color: #fff7f5;
+          background-color: #f3b65a;
+          transform: scale(1.5);
+          border-radius: 20px;
+          padding: 5px; }
 
-main .hero h1 {
-  color: #0f3433;
-  font-size: 35px;
-  font-weight: 400;
-  margin: 10px; }
-
-main .carousel {
-  width: 600px;
-  margin: auto; }
-  main .carousel div button span {
-    background-color: rgba(128, 128, 128, 0.226); }
+main .hero .div {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(195%2c 226%2c 218%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c463 C 72%2c421.2 216%2c265.8 360%2c254 C 504%2c242.2 576%2c400.2 720%2c404 C 864%2c407.8 936%2c285.4 1080%2c273 C 1224%2c260.6 1368%2c328.2 1440%2c342L1440 560L0 560z' fill='rgba(241%2c 245%2c 243%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  margin-bottom: 15px;
+  border-top: 2px #fff7f5 solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100%;
+  grid-template-areas: "img div1 div2"; }
+  main .hero .div img {
+    width: 90%;
+    height: 100%;
+    padding: 10px;
+    grid-area: img; }
+  main .hero .div .div1 {
+    grid-area: div1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    main .hero .div .div1 h1 {
+      color: #fff7f5;
+      font-size: large; }
+    main .hero .div .div1 p {
+      font-family: inherit;
+      font-size: xx-large;
+      font-weight: 800;
+      color: #fff7f5;
+      text-align: center; }
+    main .hero .div .div1 a {
+      background-color: #f3b65a;
+      color: #fff7f5;
+      border-radius: 40px;
+      padding: 15px;
+      text-decoration: none;
+      font-size: 20px; }
+  main .hero .div .div2 {
+    grid-area: div2; }
+    main .hero .div .div2 p {
+      background: rgba(243, 182, 90, 0.48);
+      border-radius: 0px 0px 15px 15px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      backdrop-filter: blur(3.1px);
+      -webkit-backdrop-filter: blur(3.1px);
+      border: 1px solid rgba(243, 182, 90, 0.77);
+      width: 50%;
+      text-align: center;
+      color: #fff7f5;
+      margin: auto; }
+    main .hero .div .div2 img {
+      width: 90%;
+      height: 80%;
+      padding: 10px; }
 
 main section div .cajita .productos {
   display: flex;
@@ -111,6 +182,17 @@ main section div .cajita .productos {
       font-style: normal;
       width: 90%; }
 
+main .carousel {
+  width: 600px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px; }
+  main .carousel div img {
+    height: 300px;
+    border: solid 1px rgba(128, 128, 128, 0.226); }
+  main .carousel div button span {
+    background-color: rgba(128, 128, 128, 0.226); }
+
 main section .cuenta {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -123,58 +205,51 @@ main section .cuenta {
     grid-area: img; }
   main section .cuenta .formulario {
     grid-area: form;
-    width: 100%;
-    align-self: center; }
-    main section .cuenta .formulario div label {
-      color: #a3c9be;
-      font-weight: 500;
-      font-size: 20px; }
-    main section .cuenta .formulario div input {
-      border-radius: 10px;
-      margin: 5px;
-      padding: 10px;
-      width: 80%; }
+    width: 80%;
+    align-self: center;
+    margin: auto; }
     main section .cuenta .formulario div {
       display: flex;
       flex-direction: column;
-      align-items: center; }
-      main section .cuenta .formulario div div .ingreso {
+      margin: auto;
+      width: 100%; }
+      main section .cuenta .formulario div label {
+        color: #a3c9be;
+        font-weight: 500;
+        font-size: 20px;
+        padding-left: 10px; }
+      main section .cuenta .formulario div input {
+        border-radius: 20px;
+        margin-bottom: 5px;
+        padding: 10px;
+        width: 100%; }
+    main section .cuenta .formulario div {
+      margin: 5px 0px 5px 0px; }
+      main section .cuenta .formulario div .ingreso {
         color: #0f3433;
         border-radius: 20px;
         text-decoration: none;
         padding: 10px;
         border: #a3c9be 1px solid;
-        text-align: center;
-        width: 80%; }
-      main section .cuenta .formulario div div .contrasenia {
-        color: #a3c9be;
         text-align: center; }
-      main section .cuenta .formulario div div .p {
-        margin: 0px;
+      main section .cuenta .formulario div .contrasenia {
         color: #a3c9be;
-        font-weight: 500;
-        text-align: center; }
-      main section .cuenta .formulario div div .crear {
-        color: #fff7f5;
-        background-color: #a3c9be;
-        margin: 10px;
-        padding: 10px;
-        border-radius: 20px;
-        text-decoration: none;
-        font-size: 20px;
         text-align: center;
-        width: 80%; }
-
-main section .cuenta div .crear {
-  color: #fff7f5;
-  background-color: #a3c9be;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-size: 20px;
-  text-align: center;
-  width: 200px; }
+        margin: 5px 0px 0px 0px; }
+    main section .cuenta .formulario div .p {
+      margin: 5px 0px 5px 0px;
+      color: #a3c9be;
+      font-weight: 500;
+      text-align: center; }
+    main section .cuenta .formulario div .crear {
+      color: #fff7f5;
+      background-color: #a3c9be;
+      padding: 10px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 20px;
+      text-align: center;
+      margin: 5px 0px 5px 0px; }
 
 main section .cafe {
   display: flex;
@@ -204,8 +279,6 @@ main section .cafe {
       margin: 5px;
       border-radius: 20px;
       width: 90%; }
-      main section .cafe div select option {
-        border-radius: 20px; }
     main section .cafe div a {
       text-decoration: none;
       color: #0f3433;
@@ -343,7 +416,9 @@ footer {
   main .baristas .b4 {
     display: none; }
   main section .cafe div {
-    margin: 5px; } }
+    margin: 5px; }
+  main .hero .div2 .box2 {
+    display: none; } }
 
 @media screen and (max-width: 710px) {
   main .contenedor {
@@ -373,7 +448,12 @@ footer {
     grid-template-areas: "presentacion " "quien " "paula" "propuesta" "bar "; }
     main .contenedor .propuesta img {
       width: 100%;
-      height: 100%; } }
+      height: 100%; }
+  main .hero .div .box {
+    display: none; }
+  main .hero .div .div2 p {
+    margin: 0;
+    width: 100%; } }
 
 @media screen and (max-width: 531px) {
   main section .cuenta {
@@ -398,15 +478,27 @@ footer {
       display: none; } }
 
 @media screen and (max-width: 460px) {
+  main .hero .div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "div1"; }
+    main .hero .div .div1 a {
+      padding: 10px;
+      margin-bottom: 5px; }
+    main .hero .div .div2 p {
+      display: none; }
   header .logo img {
     width: 250px; }
   header .navbar .container-fluid .navbar-toggler {
-    font-size: 15px; } }
+    font-size: 15px; }
+  header .navbar .icono a {
+    font-size: 10px; }
+    header .navbar .icono a img {
+      width: 20px;
+      height: 20px; } }
 
 @media screen and (max-width: 357px) {
-  main .hero h1 {
-    font-size: 25px;
-    margin: 5px; }
   main section div h2 {
     font-size: 25px; }
   main section div .cajita .productos div {
