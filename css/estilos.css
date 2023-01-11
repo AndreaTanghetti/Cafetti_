@@ -45,7 +45,7 @@ a {
 header .logo {
   display: flex;
   justify-content: center;
-  background-color: #a3c9be; }
+  background-color: #c3e2da; }
 
 header .navbar {
   padding-top: 0;
@@ -53,7 +53,7 @@ header .navbar {
   height: auto; }
   header .navbar .container-fluid {
     padding-left: 0;
-    background-color: #a3c9be;
+    background-color: #c3e2da;
     position: relative;
     z-index: 1; }
     header .navbar .container-fluid .navbar-toggler {
@@ -96,7 +96,8 @@ header .navbar {
           padding: 5px; }
 
 main .hero .div {
-  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(195%2c 226%2c 218%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c463 C 72%2c421.2 216%2c265.8 360%2c254 C 504%2c242.2 576%2c400.2 720%2c404 C 864%2c407.8 936%2c285.4 1080%2c273 C 1224%2c260.6 1368%2c328.2 1440%2c342L1440 560L0 560z' fill='rgba(241%2c 245%2c 243%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  height: 400px;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1700' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(195%2c 226%2c 218%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c463 C 72%2c421.2 216%2c265.8 360%2c254 C 504%2c242.2 576%2c400.2 720%2c404 C 864%2c407.8 936%2c285.4 1080%2c273 C 1224%2c260.6 1368%2c328.2 1440%2c342L1440 560L0 560z' fill='rgba(241%2c 245%2c 243%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   margin-bottom: 15px;
   border-top: 2px #fff7f5 solid;
   display: grid;
@@ -154,7 +155,7 @@ main section div .cajita .productos {
   flex-wrap: wrap; }
   main section div .cajita .productos div {
     width: 300px;
-    border: #a3c9be 1px solid;
+    border: #c3e2da 1px solid;
     text-align: center;
     border-radius: 10%;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
@@ -176,7 +177,7 @@ main section div .cajita .productos {
       display: inline-block;
       margin: 10px;
       padding: 10px;
-      background-color: #a3c9be;
+      background-color: #c3e2da;
       border-radius: 20px;
       font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
       font-style: normal;
@@ -214,7 +215,7 @@ main section .cuenta {
       margin: auto;
       width: 100%; }
       main section .cuenta .formulario div label {
-        color: #a3c9be;
+        color: #c3e2da;
         font-weight: 500;
         font-size: 20px;
         padding-left: 10px; }
@@ -230,20 +231,20 @@ main section .cuenta {
         border-radius: 20px;
         text-decoration: none;
         padding: 10px;
-        border: #a3c9be 1px solid;
+        border: #c3e2da 1px solid;
         text-align: center; }
       main section .cuenta .formulario div .contrasenia {
-        color: #a3c9be;
+        color: #c3e2da;
         text-align: center;
         margin: 5px 0px 0px 0px; }
     main section .cuenta .formulario div .p {
       margin: 5px 0px 5px 0px;
-      color: #a3c9be;
+      color: #c3e2da;
       font-weight: 500;
       text-align: center; }
     main section .cuenta .formulario div .crear {
       color: #fff7f5;
-      background-color: #a3c9be;
+      background-color: #c3e2da;
       padding: 10px;
       border-radius: 20px;
       text-decoration: none;
@@ -257,7 +258,7 @@ main section .cafe {
   flex-wrap: wrap; }
   main section .cafe div {
     width: 300px;
-    border: #a3c9be 1px solid;
+    border: #c3e2da 1px solid;
     text-align: center;
     border-radius: 10%;
     box-shadow: 0px 3px 19px 5px rgba(109, 109, 107, 0.236);
@@ -285,7 +286,7 @@ main section .cafe {
       display: inline-block;
       margin: 5px;
       padding: 10px;
-      background-color: #a3c9be;
+      background-color: #c3e2da;
       border-radius: 20px;
       width: 90%; }
 
@@ -345,7 +346,7 @@ main .contenedor {
     flex-wrap: wrap;
     width: 500px;
     height: 500px;
-    border: #a3c9be 1px solid;
+    border: #c3e2da 1px solid;
     border-radius: 10%;
     margin: auto;
     grid-area: paula; }
@@ -382,7 +383,7 @@ main .contenedor {
     grid-area: bar; }
 
 footer {
-  background-color: #a3c9be;
+  background-color: #c3e2da;
   margin-top: auto; }
   footer p {
     font-size: medium; }
@@ -417,7 +418,7 @@ footer {
     display: none; }
   main section .cafe div {
     margin: 5px; }
-  main .hero .div2 .box2 {
+  main .hero .div .div2 .box2 {
     display: none; } }
 
 @media screen and (max-width: 710px) {
@@ -478,16 +479,6 @@ footer {
       display: none; } }
 
 @media screen and (max-width: 460px) {
-  main .hero .div {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 100%;
-    grid-template-areas: "div1"; }
-    main .hero .div .div1 a {
-      padding: 10px;
-      margin-bottom: 5px; }
-    main .hero .div .div2 p {
-      display: none; }
   header .logo img {
     width: 250px; }
   header .navbar .container-fluid .navbar-toggler {
@@ -496,7 +487,19 @@ footer {
     font-size: 10px; }
     header .navbar .icono a img {
       width: 20px;
-      height: 20px; } }
+      height: 20px; }
+  main .hero .div {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: "div1";
+    height: 300px; }
+    main .hero .div .div1 a {
+      padding: 10px; }
+    main .hero .div .div2 p {
+      display: none; }
+  main .carousel div img {
+    height: 200px; } }
 
 @media screen and (max-width: 357px) {
   main section div h2 {

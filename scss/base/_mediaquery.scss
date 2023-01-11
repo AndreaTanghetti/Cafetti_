@@ -41,12 +41,12 @@
     }
     main{
         .hero{
-
-            
-            .div2{
+            .div{
+                .div2{
                 .box2{
                     display: none;
                 }
+            }
             }
         }
     }
@@ -185,30 +185,7 @@ main {
 }
 }
 @media screen and (max-width:460px) {
-
-    main{
-        .hero{
-        .div{
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 100%;
-            grid-template-areas: "div1";
-            .div1{
-                a{
-                    padding: 10px;
-                    margin-bottom: 5px;
-                }
-            }
-            .div2{
-                p{
-                    display: none;
-                }
-            }
-        }
-    }
-    }
-
-    header {
+        header {
         .logo {
             img {
                 width: 250px;
@@ -231,6 +208,38 @@ main {
             }
         }
     }
+
+    main{
+        .hero{
+        .div{
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 100%;
+            grid-template-areas: "div1";
+            height: 300px;
+            .div1{
+                a{
+                    padding: 10px;
+                }
+            }
+            .div2{
+                p{
+                    display: none;
+                }
+            }
+        }
+    }
+    .carousel{
+
+        div{
+            img{
+                height: 200px;
+            }
+        }
+    }
+
+    }
+
 }
 
 @media screen and (max-width:357px) {
