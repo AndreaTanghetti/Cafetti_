@@ -57,11 +57,13 @@ header .navbar {
     position: relative;
     z-index: 1; }
     header .navbar .container-fluid .navbar-toggler {
-      color: #a0cdac00; }
+      color: #a0cdac00;
+      margin-bottom: 10px; }
     header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link {
       border-radius: 20px;
       font-size: 20px;
-      transition: 0.5s; }
+      transition: 0.5s;
+      padding: 8px; }
       header .navbar .container-fluid .collapse .navbar-nav .nav-item .nav-link:hover {
         color: #fff7f5;
         background-color: #f3b65a; }
@@ -72,7 +74,8 @@ header .navbar {
     position: absolute;
     right: 0;
     top: 0;
-    margin-right: 10px; }
+    margin-right: 8px;
+    margin-top: -10px; }
     header .navbar .icono a {
       display: flex;
       flex-direction: column;
@@ -99,7 +102,7 @@ main .hero .div {
   height: 400px;
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1700' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1000%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(195%2c 226%2c 218%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c463 C 72%2c421.2 216%2c265.8 360%2c254 C 504%2c242.2 576%2c400.2 720%2c404 C 864%2c407.8 936%2c285.4 1080%2c273 C 1224%2c260.6 1368%2c328.2 1440%2c342L1440 560L0 560z' fill='rgba(241%2c 245%2c 243%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1000'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   margin-bottom: 15px;
-  border-top: 2px #fff7f5 solid;
+  border-top: 1.5px #e2f0ec solid;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 100%;
@@ -383,18 +386,17 @@ main .contenedor {
     grid-area: bar; }
 
 footer {
-  background-color: #c3e2da;
-  margin-top: auto; }
+  background-color: #c3e2da; }
   footer p {
-    font-size: medium; }
+    font-size: medium;
+    margin: 16px; }
   footer .contactos {
     display: flex;
-    justify-content: center;
-    margin: 10px; }
+    justify-content: center; }
     footer .contactos a {
       width: 30px;
       height: 30px;
-      margin: 0px 10px 0px 10px;
+      margin: 0px 16px 0px 16px;
       transition: 1s; }
       footer .contactos a:hover {
         transform: scale(1.1); }
@@ -404,6 +406,8 @@ footer {
         display: block; }
 
 @media screen and (max-width: 977px) {
+  header .navbar .icono {
+    margin-top: 0; }
   main .contenedor {
     display: grid;
     grid-template-rows: 500px 600px 500px auto 200px;

@@ -18,6 +18,7 @@ header {
 
             .navbar-toggler {
                 color: #a0cdac00;
+                margin-bottom: 10px;
             }
 
             .collapse {
@@ -27,6 +28,7 @@ header {
                             border-radius: 20px;
                             font-size: nth($font-size, 3);
                             transition: 0.5s;
+                            padding: 8px;
 
                             &:hover {
                                 color: $color-claro;
@@ -45,7 +47,8 @@ header {
             position: absolute;
             right: 0;
             top: 0;
-            margin-right: 10px;
+            margin-right: 8px;
+            margin-top: -10px;
 
             a {
                 display: flex;

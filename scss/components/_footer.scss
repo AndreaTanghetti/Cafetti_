@@ -1,19 +1,20 @@
 footer {
     background-color: $color-principal;
-    margin-top: auto;
+    // margin-top: auto;
 
     p {
         @extend %texto;
         font-size: medium;
+        margin: 16px
     }
 
     .contactos {
         @include row (flex, center);
-        margin: 10px;
+        // margin: 16px;
 
         a {
             @include tamano(30px, 30px);
-            margin: 0px 10px 0px 10px;
+            margin: 0px 16px 0px 16px;
             transition: 1s;
 
             &:hover {

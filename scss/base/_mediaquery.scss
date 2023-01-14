@@ -1,4 +1,11 @@
 @media screen and (max-width:977px) {
+    header{
+        .navbar{
+            .icono{
+                margin-top: 0;
+            }
+        }
+    }
     main {
         .contenedor {
             display: grid;
